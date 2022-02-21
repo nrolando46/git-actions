@@ -1,6 +1,9 @@
-name: "Run Deployment of mp-product-import in Dev"
+name: "Run Deployment of mp-product-import in QA"
 on:
   pull_request:
+    types:
+      - edited
+      - opened
     branches:
       - 'mp-qa-**'  
     #paths-ignore:
@@ -10,7 +13,7 @@ jobs:
   QASample:
     runs-on: ubuntu-latest
     environment:
-      name: dev 
+      name: QA 
     steps:
       - name: Checking out Code from Github
         uses: actions/checkout@v2
@@ -18,4 +21,5 @@ jobs:
         uses: actions/setup-python@v2
       - name: Sample Hellow
         run: echo "Hello World! From QA"
-            
+      - name: Sample hello
+        run: echo "Sample Hello"      
