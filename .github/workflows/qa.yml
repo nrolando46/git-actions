@@ -17,5 +17,5 @@ jobs:
       - name: Setting Python Actions
         uses: actions/setup-python@v2
       - name: Sample Hellow
-         run: echo "Hello World! From QA"
+        run: echo "Hello World! From QA"
             
