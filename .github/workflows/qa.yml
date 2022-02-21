@@ -1,0 +1,21 @@
+name: "Run Deployment of mp-product-import in Dev"
+on:
+  pull_request:
+    branches:
+      - 'mp-qa-**'  
+    #paths-ignore:
+     # - '.github/**'  
+
+jobs:
+  QASample:
+    runs-on: ubuntu-latest
+    environment:
+      name: dev 
+    steps:
+      - name: Checking out Code from Github
+        uses: actions/checkout@v2
+      - name: Setting Python Actions
+        uses: actions/setup-python@v2
+      - name: Sample Hellow
+         run: echo "Hello World! From QA"
+            
