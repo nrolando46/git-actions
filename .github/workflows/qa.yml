@@ -1,4 +1,4 @@
-name: "Run Deployment of mp-product-import in Dev"
+name: "Run Deployment of mp-product-import in QA"
 on:
   pull_request:
     types:
@@ -13,7 +13,7 @@ jobs:
   QASample:
     runs-on: ubuntu-latest
     environment:
-      name: dev 
+      name: QA 
     steps:
       - name: Checking out Code from Github
         uses: actions/checkout@v2
