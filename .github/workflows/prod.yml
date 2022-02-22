@@ -1,4 +1,4 @@
-name: "Run Deployment of mp-product-import in prod"
+name: "Run Deployment in prod"
 on:
   pull_request_review:
     types: [submitted]

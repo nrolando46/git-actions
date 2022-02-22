@@ -1,4 +1,4 @@
-name: "Pull Request with Review"
+name: "Run Deployment in qa"
 on:
   pull_request_review:
     types: [submitted]
