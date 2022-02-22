@@ -5,10 +5,11 @@ on:
       - edited
       - opened
     branches:
-      - 'mp-qa-**'  
+      - 'mp-qa-/**'  
     #paths-ignore:
      # - '.github/**'  
 #Test Dummy
+# Testing 123
 jobs:
   QASample:
     runs-on: ubuntu-latest
