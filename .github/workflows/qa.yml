@@ -2,8 +2,8 @@ name: "Run Deployment in qa"
 on:
   pull_request_review:
     types: [submitted]
-    branches:
-      - 'mp-qa-**'
+    #branches:
+     # - 'mp-qa-**'
     #paths-ignore:
      # - '.github/**'  
     #test wf 1
