@@ -6,11 +6,11 @@ on:
       - 'mp-qa-**'
     #paths-ignore:
      # - '.github/**'  
-    #test wf
+    #test wf 1
 
 jobs:
   QASample:
-    if: github.event.review.state == 'approved' && contains(github.ref, 'qa')
+    if: github.event.review.state == 'approved' && contains(github.event.pull_request.base.ref, 'qa')
     runs-on: ubuntu-latest
     environment:
       name: qa 
