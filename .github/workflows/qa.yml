@@ -6,7 +6,7 @@ on:
       - 'mp-qa-**'
     #paths-ignore:
      # - '.github/**'  
-    #test wf
+    #test wf 1
 
 jobs:
   QASample:
