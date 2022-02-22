@@ -2,14 +2,14 @@ name: "Run Deployment in prod"
 on:
   pull_request_review:
     types: [submitted]
-    branches:
-      - 'mp-prod-**'
+    #branches:
+     # - 'mp-prod-**'
     #paths-ignore:
      # - '.github/**'  
 
 jobs:
   PRODSample:
-    if: github.event.review.state == 'approved' && contains(github.event.pull_request.base.ref, 'prod')
+    if: github.event.review.state == 'approved'
     runs-on: ubuntu-latest
     environment:
       name: prod 
