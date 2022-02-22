@@ -1,6 +1,6 @@
 name: "Run Deployment of mp-product-import in prod"
 on:
- pull_request_review:
+  pull_request_review:
     types: [submitted]
     branches:
       - 'mp-prod-**'
