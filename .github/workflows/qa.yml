@@ -1,10 +1,10 @@
 name: "Run Deployment of mp-product-import in QA"
 on:
-  pull_request:
-    types: [opened, edited]
-    branches:
-      - 'mp-qa-/**'
-      - 'main'  
+  on: workflow_dispatch
+    #types: [opened, edited]
+    #branches:
+     # - 'mp-qa-/**'
+      #- 'main'  
     #paths-ignore:
      # - '.github/**'  
 #Test Dummy
