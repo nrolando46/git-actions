@@ -9,7 +9,7 @@ on:
 
 jobs:
   QASample:
-    if: github.event.review.state == 'approved'
+    if: github.event.review.state == 'approved' && contains(github.ref, 'qa')
     runs-on: ubuntu-latest
     environment:
       name: qa 
