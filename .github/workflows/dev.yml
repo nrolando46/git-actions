@@ -2,12 +2,13 @@ name: "Run Deployment of mp-product-import in Dev"
 on:
   push:
     branches:
-      - 'mp-dev-**'  
+      - 'feature**' 
     #paths-ignore:
      # - '.github/**'  
 
 jobs:
   DevSample:
+    if: startsWith(github.ref, 'refs/heads/feature')
     runs-on: ubuntu-latest
     environment:
       name: dev 
