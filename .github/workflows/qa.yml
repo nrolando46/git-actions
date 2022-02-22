@@ -1,18 +1,18 @@
-name: "Pull Request with Review"
+name: "Run Deployment in qa"
 on:
   pull_request_review:
     types: [submitted]
     branches:
-      - main
+      - 'mp-qa-**'
     #paths-ignore:
      # - '.github/**'  
 
 jobs:
   QASample:
-    if: github.event.review.state == 'approved'
+    if: github.event.review.state == 'approved' && contains(github.ref, 'qa')
     runs-on: ubuntu-latest
     environment:
-      name: QA 
+      name: qa 
     steps:
       - name: Checking out Code from Github
         uses: actions/checkout@v2

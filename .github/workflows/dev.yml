@@ -1,10 +1,11 @@
-name: "Run Deployment of mp-product-import in Dev"
+name: "Run Deployment in dev"
 on:
   push:
     branches:
       - 'feature**' 
     #paths-ignore:
      # - '.github/**'  
+
 # A Sample Job
 jobs:
   DevSample:
