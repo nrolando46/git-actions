@@ -1,9 +1,7 @@
 name: "Run Deployment of mp-product-import in QA"
 on:
   pull_request:
-    types:
-      - edited
-      - opened
+    types: [opened, edited]
     branches:
       - 'mp-qa-/**'  
     #paths-ignore:
