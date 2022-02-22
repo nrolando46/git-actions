@@ -9,7 +9,7 @@ on:
 
 jobs:
   PRODSample:
-    if: github.event.review.state == 'approved' && contains(github.ref, 'qa')
+    if: github.event.review.state == 'approved' && contains(github.ref, 'prod')
     runs-on: ubuntu-latest
     environment:
       name: prod 
