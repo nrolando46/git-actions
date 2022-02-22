@@ -1,6 +1,7 @@
 name: "Run Deployment of mp-product-import in QA"
 on:
-  on: workflow_dispatch
+  on: 
+    workflow_dispatch:
     #types: [opened, edited]
     #branches:
      # - 'mp-qa-/**'
