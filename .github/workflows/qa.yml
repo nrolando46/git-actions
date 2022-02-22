@@ -1,6 +1,6 @@
 name: "Run Deployment of mp-product-import in QA"
 on: 
-  workflow_dispatch:
+  push:
     #types: [opened, edited]
     #branches:
      # - 'mp-qa-/**'
@@ -22,4 +22,4 @@ jobs:
       - name: Sample Hellow
         run: echo "Hello World! From QA"
       - name: Sample hello
-        run: echo "Sample Hello"      
+        run: echo "Sample Hello" 
