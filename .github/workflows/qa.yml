@@ -1,14 +1,10 @@
 name: "Run Deployment of mp-product-import in QA"
+
 on:
   pull_request:
-    types:
-      - edited
-      - opened
     branches:
-      - 'mp-qa-/**'  
-    #paths-ignore:
-     # - '.github/**'  
-
+      - mp-qa-**  
+      
 jobs:
   QASample:
     runs-on: ubuntu-latest
